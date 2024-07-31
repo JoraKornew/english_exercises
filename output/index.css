@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================================*/
+
+
+body {
+  font: 1.3rem "Fira Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.nav-menu {
+  position: fixed;
+  background: #fff;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+details[open]{
+height: 100%;
+}
+
+.nav-menu summary {
+  list-style: none;
+  border-bottom: 2px solid #777;
+  background: #f2f2f2;
+}
+
+
+summary {
+  border-bottom: 2px solid #777;
+  background: #f2f2f2;
+  list-style: square;
+  list-style-position: inside;
+}
+
+.sub {
+
+  padding-left: 20px;
+  background: none;
+  color: #58179a;
+}
+
+
+h2 {
+
+/*padding-left: 20px;*/
+font-size: xx-large;
+display: inline;
+}
+
+
+h3 {
+
+/*padding-left: 35px;*/
+display: inline;
+font-size: 20pt; 
+}
+
+
+
+.burger {
+/*width: 24px;
+  height: 24px;
+  background-image: url(menu.svg);
+  margin-left: 1%;*/
+  font-size: 0px;
+}
+
+nav li {
+  margin: 2px 0px 5px 2px;
+}
+ 
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+}
+
+article {
+margin: 10px;
+}
+
+a {
+  color: #444;
+  /*font-style: italic;*/
+  display: block;
+  border-radius: 1px;
+  /*margin-left: 1%;*/
+  padding: 5px 10px;
+  width: 100%;
+}
+
+a:hover {
+  color: #000;
+  background: #ddd;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration-color: #a1a1a1;
+}
+.inProgress {
+  background: none;
+  width: 40px;
+  border: none;
+}
+
+summary>.inProgress {
+  height: 25px;
+  width: 27px;
+
+}
+
+.current {
+  color: #050;
+}
+section {
+  width: 100%;
+  margin: 30px 5px 5px 5px;
+  color: #2d2d2d;
+}
+
+section ul li {
+  list-style: disc;
+  margin: 20px 2px 2px 20px;
+  text-align: justify;
+}
+
+.bot-nav {
+text-align: right;
+}
+
+.biglist div {
+  width: 300px;
+  display: inline-flex;
+  /*margin: 0px 10px;*/
+  margin: 10px 5px;
+  font-size: xx-large; 
+  /*background: #efefef;*/
+}
+
+.questions div {
+  background: #2a2a2a;
+  color: white;
+  margin: 5px;
+  border-radius: 3px;
+  padding: 2px 10px;
+  width: fit-content;
+}
+
+.linklist div {
+  margin: 10px 20px;
+}
+
+.linklist div a {
+  margin: 2px 15px;
+}
+
+p {
+  margin: 10px;
+  text-align: justify;
+}
+
+hr {
+  margin: 10px 50px;
+  color: #eee;
+}
+
+.botline {
+  margin: 25px 2px 10px 70%;
+}
+
+
+.mobile {
+  display: block;
+}
+
+.desk {
+  display: none;
+}
+
+.desk ol {
+  border-bottom: 2px solid #2d2d2d;
+  text-align: center;
+  background: #f2f2f2;
+  height: 30px;
+}
+
+.enter-button {
+  font-size: xx-large;
+  padding: 0px 35px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+input {
+  width: 60%;
+  background: #444;
+  border-radius: 2px;
+  font-size: xx-large;
+  color: white;
+  padding-left: 5px;
+}
+
+.biglist a {
+  font-size: large;
+}
+
+.user-answer, .right-answer, .pronunciation {
+  font-size: xx-large;
+  padding-left: 10px;
+}
+
+img {
+  width: 350px;
+  height: 500px;
+  background: #eee;
+  border-radius: 3px;
+}
+
+@media (min-width: 800px){
+
+  .mobile {
+    display: none;
+  }
+
+  .desk {
+    display: block;
+  }
+
+  section {
+    margin-top: 60px;
+  }
+
+  nav li, nav a {
+    display: inline;
+  }
+}
+

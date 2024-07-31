@@ -1,0 +1,3 @@
+dictionary.html
+grammar.html
+phonology.html
